@@ -48,7 +48,6 @@ namespace API_CRUD.Controllers
             {
                 return BadRequest();
             }
-
             _context.Entry(sheet1).State = EntityState.Modified;
 
             try
