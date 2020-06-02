@@ -70,6 +70,7 @@ namespace API_CRUD.Controllers
                                 else
                                 {
                                     Sheet sheet;
+                                    
                                     if (j == 0)
                                     {
                                         sheet = new Sheet1()
@@ -78,7 +79,7 @@ namespace API_CRUD.Controllers
                                             Value = reader.GetValue(column).ToString(),
                                             DateTime = DateTime.Now
                                         };
-                                       await _context.Sheet1s.AddAsync((Sheet1)sheet);
+                                        await _context.Sheet1s.AddAsync((Sheet1)sheet);
                                     }
                                     else
                                     {
